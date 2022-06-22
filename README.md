@@ -1,2 +1,2 @@
 # Active_Inference_Successor_Representations
-repository for Successor Representations IWAI paper
+official repository for Successor Representations IWAI paper
