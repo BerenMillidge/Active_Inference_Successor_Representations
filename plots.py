@@ -28,7 +28,10 @@ def visualize_main_matrices(grid_size):
     plt.savefig("Successor_matrix_2.png", format="png")
     plt.show()
     R = np.ones(grid_size**2) * -0.1
-    R[8] = 10
+    if grid_size == 3:
+        R[8] = 10
+    else:
+        R[10] = 10
     print(R)
     V = M @ R
     print(V)
@@ -64,7 +67,10 @@ def visualize_entropic_matrices(grid_size):
     I = np.identity(grid_size**2)
     M = np.linalg.inv(I - (2 * avg_B))
     R = np.ones(grid_size**2) * -0.1
-    R[8] = 10
+    if grid_size == 3:
+        R[8] = 10
+    else:
+        R[10] = 10
     V = M @ R
     
     G_R = R + H_A
