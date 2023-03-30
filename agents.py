@@ -42,7 +42,7 @@ class SR_Agent(object):
         plt.imshow(B_avg)
         plt.show()
         self.M = np.linalg.inv(I - (self.inverse_factor * B_avg))
-        plt.imshow(M)
+        plt.imshow(self.M)
         plt.show()
         V = self.M @ self.C
         plt.imshow(V.reshape(grid_size, grid_size))

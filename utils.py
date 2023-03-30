@@ -38,7 +38,7 @@ def generate_B_matrices(grid_size):
                 B_L[i,j] = 1
         if start_x != 0:
             if end_x == start_x - 1 and start_y == end_y:
-            B_L[i,j] = 1
+                B_L[i,j] = 1
         # right matrix
         if start_x == grid_size-1:
             if start_x == end_x and start_y == end_y:
