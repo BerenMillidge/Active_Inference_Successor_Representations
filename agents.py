@@ -182,7 +182,7 @@ def compare_SR_AIF_performance(N_runs, max_gridsize):
 
 if __name__ == '__main__':
     SR_steps, SR_rewards, SR_times, AIF_steps, AIF_rewards, AIF_times = compare_SR_AIF_performance(10,10)
-    
+    AIF_steps, AIF_rewards, AIF_times = compare_SR_AIF_performance(10,10)
     if not os.path.exists("data/"):
         os.makedirs("data/")
         
